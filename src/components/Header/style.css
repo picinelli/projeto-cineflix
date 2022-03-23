@@ -5,9 +5,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  position: fixed;
 }
 
 .Header > p {
+  font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
   font-size: 34px;

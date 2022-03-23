@@ -1,0 +1,40 @@
+.conteudo-filmes {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.conteudo-filmes > h1 {
+  margin-top: 220px;
+  margin-bottom: 40px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  text-align: center;
+  color: var(--azulEscuro);
+}
+
+.opcoes-filmes {
+  width: 380px;
+  max-height: 100vh;
+  background-color: #FFFFFF;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.opcao-filme {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 210px;
+  background: #FFFFFF;
+  box-shadow: 0px 3px 6px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+  margin-bottom: 12px;
+}
