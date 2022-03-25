@@ -1,0 +1,155 @@
+.conteudo-assentos {
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.conteudo-assentos > h1 {
+  margin-top: 120px;
+  margin-bottom: 40px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  text-align: center;
+  color: var(--azulEscuro);
+}
+
+.container-assentos {
+  width: 320px;
+  max-height: 100vh;
+  background-color: #FFFFFF;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.assento {
+  margin-right: 6px;
+  margin-bottom: 15px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  width: 26px;
+  height: 26px;
+  background: #C3CFD9;
+  border: 1px solid #808F9D;
+  box-sizing: border-box;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.assento-indisponivel {
+  background: #FBE192;
+  border: 1px solid #F7C52B;
+}
+
+.legenda-opcoes {
+  display: flex;
+  justify-content: space-around;
+  width: 320px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+}
+
+.legenda-opcoes p {
+  margin-top: 6px;
+}
+
+.opcao_selecionado {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.opcao_selecionado-cor {
+  width: 25px;
+  height: 25px;
+  background: #8DD7CF;
+  border: 1px solid #1AAE9E;
+  box-sizing: border-box;
+  border-radius: 17px;
+}
+
+.opcao_disponivel-cor {
+  width: 25px;
+  height: 25px;
+  background: #C3CFD9;
+  border: 1px solid #7B8B99;
+  box-sizing: border-box;
+  border-radius: 17px;
+}
+
+.opcao_indisponivel-cor {
+  width: 25px;
+  height: 25px;
+  background: #FBE192;
+  border: 1px solid #F7C52B;
+  box-sizing: border-box;
+  border-radius: 17px;
+}
+
+.container-informacoes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  margin-top: 45px;
+  color: #293845;
+}
+
+.container-informacoes input {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 400;
+  font-size: 18px;
+  width: 327px;
+  height: 51px;
+  background: #FFFFFF;
+  border: 2px solid #D5D5D5;
+  box-sizing: border-box;
+  border-radius: 3px;
+  padding-left: 15px;
+}
+
+.informacoes-comprador {
+  margin-bottom: 50px;
+}
+
+::placeholder {
+  color: #AFAFAF;
+}
+
+.container-informacoes h2 {
+  margin-top: 10px;
+  margin-bottom: 3px;
+}
+
+.reservar-assento {
+  width: 225px;
+  height: 42px;
+  background: #E8833A;
+  border-radius: 3px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFF;
+  margin-bottom: 150px;
+}
+

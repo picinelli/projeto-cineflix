@@ -4,3 +4,7 @@
   --laranja: #E8833A;
   --azulEscuro: #293845;
 }
+
+a {
+  text-decoration: none;
+}

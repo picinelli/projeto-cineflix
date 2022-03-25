@@ -3,11 +3,11 @@ import Filme from "../Main/Filme";
 import "../Main/style.css";
 
 import { useState, useEffect } from "react";
-import { Link, useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 import axios from "axios";
 
 export default function Main() {
-  const [filmes, setFilmes] = useState([]);
+  const [filmes, setFilmes] = useState(null);
 
   useEffect(() => {
     const promise = axios.get(
@@ -17,8 +17,17 @@ export default function Main() {
     promise.then((response) => {
       setFilmes(response.data);
     });
-    promise.catch(err => err.response)
+    promise.catch((err) => err.response);
   }, []);
+
+  //Texto de carregamento antes da promise
+  if (filmes === null) {
+    return (
+      <div className="conteudo-filmes">
+        <h1>Carregando...</h1>
+      </div>
+    );
+  }
 
   return (
     <div className="conteudo-filmes">
@@ -34,4 +43,6 @@ export default function Main() {
       </div>
     </div>
   );
+
+  
 }
