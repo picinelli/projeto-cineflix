@@ -1,7 +1,7 @@
 .Header {
   width: 100vw;
   height: 70px;
-  background: #C3CFD9;
+  background: #c3cfd9;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -9,10 +9,9 @@
 }
 
 .Header > p {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
   font-size: 34px;
   color: var(--laranja);
 }
-

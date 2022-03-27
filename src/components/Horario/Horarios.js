@@ -1,4 +1,4 @@
-import {Link} from 'react-router-dom'
+import { Link } from "react-router-dom";
 
 export default function Horarios(props) {
   const { diaSemana, diaMes, sessoes } = props;
@@ -11,7 +11,13 @@ export default function Horarios(props) {
         </h2>
         <div className="container-lateralizar">
           {sessoes.map((sessao) => {
-            return <Sessao sessao={sessao.id} key={sessao.name + sessao.id} hora={sessao.name} />;
+            return (
+              <Sessao
+                sessao={sessao.id}
+                key={sessao.name + sessao.id}
+                hora={sessao.name}
+              />
+            );
           })}
         </div>
       </div>
@@ -19,7 +25,7 @@ export default function Horarios(props) {
   );
 
   function Sessao(props) {
-    const {hora, sessao} = props
+    const { hora, sessao } = props;
     return (
       <Link to={`/sessao/${sessao}`}>
         <div className="horario-filme">

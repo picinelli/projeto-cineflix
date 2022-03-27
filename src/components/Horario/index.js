@@ -47,7 +47,6 @@ export default function Horario() {
             />
           );
         })}
-        
       </div>
       <footer>
         <div className="caixa_branca-footer">

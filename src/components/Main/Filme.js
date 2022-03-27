@@ -1,5 +1,5 @@
 export default function Filme(props) {
-  const {src, alt} = props;
+  const { src, alt } = props;
 
   return (
     <div className="opcao-filme">

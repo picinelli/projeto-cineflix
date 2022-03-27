@@ -9,7 +9,7 @@
 .conteudo-horarios > h1 {
   margin-top: 110px;
   margin-bottom: 40px;
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -21,7 +21,7 @@
 .opcoes-horarios {
   width: 380px;
   max-height: 100vh;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -32,7 +32,7 @@
 }
 
 .data-filme {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -49,11 +49,11 @@
 }
 
 .horario-filme {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
-  color: #FFFFFF;
+  color: #ffffff;
   width: 83px;
   height: 43px;
   left: 23px;
@@ -75,8 +75,8 @@ footer {
   right: 0;
   width: 100vw;
   height: 120px;
-  background: #DFE6ED;
-  border-top: 1px solid #9EADBA;
+  background: #dfe6ed;
+  border-top: 1px solid #9eadba;
 }
 
 .caixa_branca-footer {
@@ -85,20 +85,20 @@ footer {
   align-items: center;
   width: 64px;
   height: 89px;
-  background: #FFFFFF;
+  background: #ffffff;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
   border-radius: 2px;
   margin-left: 8px;
 }
 
 .caixa_branca-footer > img {
-  max-width:85%;
-  max-height:85%;
+  max-width: 85%;
+  max-height: 85%;
 }
 
 .nome-filme {
   margin-left: 10px;
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
   font-size: 26px;

@@ -10,7 +10,7 @@
 .conteudo-filmes > h1 {
   margin-top: 280px;
   margin-bottom: 40px;
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -21,7 +21,7 @@
 .opcoes-filmes {
   width: 380px;
   max-height: 100vh;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -33,7 +33,7 @@
   align-items: center;
   width: 150px;
   height: 210px;
-  background: #FFFFFF;
+  background: #ffffff;
   box-shadow: 0px 3px 6px 5px rgba(0, 0, 0, 0.1);
   border-radius: 3px;
   margin-bottom: 12px;

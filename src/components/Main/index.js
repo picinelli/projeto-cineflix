@@ -24,7 +24,7 @@ export default function Main() {
   if (filmes === null) {
     return (
       <div className="conteudo-filmes">
-        <h1>Carregando...</h1>
+        <img src="./assets/images/tenor.gif"></img>
       </div>
     );
   }
@@ -43,6 +43,4 @@ export default function Main() {
       </div>
     </div>
   );
-
-  
 }

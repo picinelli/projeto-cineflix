@@ -1,23 +1,24 @@
 import { useState, useEffect } from "react";
-import { useParams, useNavigate } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import axios from "axios";
 
 import "./style.css";
 
 import Assentos from "./Assentos";
 import Footer from "./Footer";
+import Form from "./Form";
 
 export default function Assento() {
   const { idSessao } = useParams();
   const [listaAssentos, setListaAssentos] = useState([]);
   const [infoSessao, setInfoSessao] = useState(null);
-  const navigate = useNavigate()
   const [infoUsuario, setInfoUsuario] = useState({
     ids: [],
     name: "",
     cpf: "",
-    assentos: []
-  })
+    assentos: [],
+    infoSessao: {},
+  });
 
   useEffect(() => {
     const promise = axios.get(
@@ -26,22 +27,12 @@ export default function Assento() {
 
     promise.then((response) => {
       setInfoSessao(response.data);
+      setInfoUsuario({ ...infoUsuario, infoSessao: response.data });
       setListaAssentos(response.data.seats);
     });
 
-    promise.catch((err) => err.response);
+    promise.catch((err) => console.log(err));
   }, [idSessao]);
-
-  function verificarDisponibilidade(e) {
-    e.preventDefault();
-    const promise = axios.post(`https://mock-api.driven.com.br/api/v5/cineflex/seats/book-many`, infoUsuario)
-
-    promise.then((response) => {
-      navigate('/sucesso', {state: infoUsuario});
-    })
-    promise.catch(err => alert('Ops, alguma coisa deu errado. Tente novamente!'))
-
-  }
 
   return (
     <>
@@ -80,31 +71,7 @@ export default function Assento() {
         </div>
 
         <div className="container-informacoes">
-          <form onSubmit={verificarDisponibilidade}>
-            <div className="informacoes-comprador">
-              <label>Nome do comprador:</label>
-              <input
-                value={infoUsuario.name}
-                name="nome"
-                className="input-nome"
-                placeholder="Digite seu nome..."
-                onChange={(e) => {setInfoUsuario({...infoUsuario, name: e.target.value});}}
-                required
-              ></input>
-              <label>CPF do comprador:</label>
-              <input
-                value={infoUsuario.cpf}
-                name="cpf"
-                className="input-cpf"
-                placeholder="Digite seu CPF..."
-                onChange={(e) => {setInfoUsuario({...infoUsuario, cpf: e.target.value})}}
-                required
-              ></input>
-            </div>
-            <button type="submit" className="reservar-assento">
-              <p>Reservar assento(s)</p>
-            </button>
-          </form>
+          <Form infoUsuario={infoUsuario} setInfoUsuario={setInfoUsuario} />
         </div>
       </div>
 

@@ -1,8 +1,8 @@
-import {useState} from 'react'
+import { useState } from "react";
 
 export default function Assento(props) {
   const { id, isAvailable, name, infoUsuario, setInfoUsuario } = props;
-  const [selecionado, setSelecionado] = useState("assento")
+  const [selecionado, setSelecionado] = useState("assento");
 
   if (isAvailable === false) {
     return (
@@ -15,13 +15,21 @@ export default function Assento(props) {
   return (
     <div
       onClick={() => {
-        for(let i = 0; i < infoUsuario.assentos.length; i++) {
-          if(infoUsuario.assentos[i] === name) return <></>
+        for (let i = 0; i < infoUsuario.assentos.length; i++) {
+          if (infoUsuario.assentos[i] === name) {
+            console.log(infoUsuario.assentos)
+            infoUsuario.assentos.splice(i, 1)
+            return setSelecionado("assento")
+          };
         }
 
-        setInfoUsuario({...infoUsuario, ids: [...infoUsuario.ids, id], assentos: [...infoUsuario.assentos, name]})
+        setInfoUsuario({
+          ...infoUsuario,
+          ids: [...infoUsuario.ids, id],
+          assentos: [...infoUsuario.assentos, name],
+        });
 
-        setSelecionado("assento selecionado")
+        setSelecionado("assento selecionado");
       }}
       className={selecionado}
     >
