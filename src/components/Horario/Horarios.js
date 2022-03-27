@@ -28,7 +28,7 @@ export default function Horarios(props) {
     const { hora, sessao } = props;
     return (
       <Link to={`/sessao/${sessao}`}>
-        <div className="horario-filme">
+        <div className="horario-filme hvr-grow hvr-back-pulse">
           <p>{hora}</p>
         </div>
       </Link>

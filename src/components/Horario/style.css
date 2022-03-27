@@ -19,7 +19,9 @@
 }
 
 .opcoes-horarios {
-  width: 380px;
+  margin-left: 20px;
+  width: 100%;
+  max-width: 380px;
   max-height: 100vh;
   background-color: #ffffff;
   display: flex;
@@ -73,7 +75,8 @@ footer {
   align-items: center;
   bottom: 0;
   right: 0;
-  width: 100vw;
+  width: 100%;
+  max-width: 100vw;
   height: 120px;
   background: #dfe6ed;
   border-top: 1px solid #9eadba;

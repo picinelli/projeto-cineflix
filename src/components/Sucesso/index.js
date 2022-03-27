@@ -31,7 +31,7 @@ export default function Sucesso() {
         </div>
       </div>
       <Link to={`/`}>
-        <div className="voltar-home">
+        <div className="voltar-home hvr-grow hvr-back-pulse">
           <p>Voltar pra Home</p>
         </div>
       </Link>

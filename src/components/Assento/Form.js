@@ -58,7 +58,7 @@ export default function Form(props) {
           required
         ></input>
       </div>
-      <button type="submit" className="reservar-assento">
+      <button type="submit" className="reservar-assento hvr-grow hvr-back-pulse">
         <p>Reservar assento(s)</p>
       </button>
     </form>
