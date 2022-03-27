@@ -17,7 +17,6 @@ export default function Assento(props) {
       onClick={() => {
         for (let i = 0; i < infoUsuario.assentos.length; i++) {
           if (infoUsuario.assentos[i] === name) {
-            console.log(infoUsuario.assentos)
             infoUsuario.assentos.splice(i, 1)
             return setSelecionado("assento")
           };

@@ -1,6 +1,7 @@
 import Filme from "../Main/Filme";
 
 import "../Main/style.css";
+import carregandoGIF from '../../assets/images/tenor.gif'
 
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
@@ -24,7 +25,7 @@ export default function Main() {
   if (filmes === null) {
     return (
       <div className="conteudo-filmes">
-        <img src="./assets/images/tenor.gif"></img>
+        <img className="gif" src={carregandoGIF} alt="carregandoGIF"></img>
       </div>
     );
   }

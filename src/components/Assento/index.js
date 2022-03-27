@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import axios from "axios";
 
 import "./style.css";
+import carregandoGIF from '../../assets/images/tenor.gif'
 
 import Assentos from "./Assentos";
 import Footer from "./Footer";
@@ -10,7 +11,7 @@ import Form from "./Form";
 
 export default function Assento() {
   const { idSessao } = useParams();
-  const [listaAssentos, setListaAssentos] = useState([]);
+  const [listaAssentos, setListaAssentos] = useState(null);
   const [infoSessao, setInfoSessao] = useState(null);
   const [infoUsuario, setInfoUsuario] = useState({
     ids: [],
@@ -33,6 +34,14 @@ export default function Assento() {
 
     promise.catch((err) => console.log(err));
   }, [idSessao]);
+
+  if (listaAssentos === null) {
+    return (
+      <div className="conteudo-filmes">
+        <img className="gif" src={carregandoGIF} alt="carregandoGIF"></img>
+      </div>
+    );
+  }
 
   return (
     <>

@@ -1,4 +1,5 @@
 import "./style.css";
+import carregandoGIF from '../../assets/images/tenor.gif'
 
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
@@ -26,8 +27,8 @@ export default function Horario() {
   //Texto de carregamento antes da promise
   if (filmeHorario === null || infoFilme === null) {
     return (
-      <div className="conteudo-horarios">
-        <h1>Carregando...</h1>
+      <div className="conteudo-filmes">
+        <img className="gif" src={carregandoGIF} alt="carregandoGIF"></img>
       </div>
     );
   }
