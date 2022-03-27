@@ -21,7 +21,7 @@ export default function Horario() {
       setInfoFilme(response.data);
     });
     promise.catch((err) => err.response);
-  }, []);
+  }, [idFilme]);
 
   //Texto de carregamento antes da promise
   if (filmeHorario === null || infoFilme === null) {

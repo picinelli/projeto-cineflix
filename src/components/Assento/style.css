@@ -73,7 +73,7 @@
 .opcao_selecionado-cor {
   width: 25px;
   height: 25px;
-  background: #8DD7CF;
+  background: #71d3aa;
   border: 1px solid #1AAE9E;
   box-sizing: border-box;
   border-radius: 17px;
@@ -98,16 +98,23 @@
 }
 
 .container-informacoes {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   margin-top: 45px;
   color: #293845;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+form button {
+  border: 0px;
 }
 
 .container-informacoes input {
@@ -126,13 +133,15 @@
 
 .informacoes-comprador {
   margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
 }
 
 ::placeholder {
   color: #AFAFAF;
 }
 
-.container-informacoes h2 {
+.container-informacoes label {
   margin-top: 10px;
   margin-bottom: 3px;
 }
@@ -153,3 +162,6 @@
   margin-bottom: 150px;
 }
 
+.selecionado {
+  background-color: #71d3aa;
+}
