@@ -6,7 +6,7 @@ export default function Assento(props) {
 
   if (isAvailable === false) {
     return (
-      <div className="assento assento-indisponivel">
+      <div onClick={() => {alert("Esse assento não está disponível")}} className="assento assento-indisponivel">
         <p>{name}</p>
       </div>
     );
