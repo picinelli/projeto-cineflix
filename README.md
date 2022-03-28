@@ -28,10 +28,7 @@
     - [x]  Versionamento usando Git é obrigatório, crie um **repositório público** no seu perfil do GitHub
     - [x]  Faça commits a cada funcionalidade implementada
 - Layout
-    - [x]  Aplicar layout para mobile, seguindo figma fornecido (não é necessário implementar um layout para desktop)
-        
-        [Cineflex](https://www.figma.com/file/rc7ZTYfLZg9zpGahWB1aXb/Cineflex?node-id=0%3A1)
-        
+    - [x]  Aplicar layout para mobile, seguindo figma fornecido (não é necessário implementar um layout para desktop)   
 - Escolha de Filme (rota "/")
     - [x]  Buscar as informações dos filmes pela API fornecida e exibir conforme layout fornecido
     - [x]  Ao clicar em um filme, o usuário deve ser redirecionado para a rota "/sessoes/:idFilme", sendo :idFilme o id do filme clicado
