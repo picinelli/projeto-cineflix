@@ -7,6 +7,9 @@
   </a>
 
 <h3 align="center">Projeto - Cineflex</h3>
+  <h4 align="center"> 
+	🚀 Concluído! 🚀
+  </h4>
   <p align="center">
     Single-Page Application (SPA) para um cinema, usando React Router!
     <br />
