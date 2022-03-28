@@ -1,70 +1,81 @@
-# Getting Started with Create React App
+<div id="top"></div>
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
+  <a href="https://github.com/picinelli/projeto-cineflix">
+    <img src="https://github.com/picinelli/projeto-cineflix/blob/main/public/android-chrome-192x192.png" alt="Logo" width="100">
+  </a>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h3 align="center">Projeto - Cineflex</h3>
+  <h4 align="center"> 
+	🚀 Concluído! 🚀
+  </h4>
+  <p align="center">
+    Single-Page Application (SPA) para um cinema, usando React Router!
+    <br />
+    <a href="https://github.com/picinelli/projeto-cineflix/tree/main/src"><strong>JSX code»</strong></a>
+</div>
 
-## Available Scripts
+<!-- ABOUT THE PROJECT -->
 
-In the project directory, you can run:
+## Requisitos
 
-### `npm start`
+- Geral
+    - [x]  Manipule o HTML usando somente React (sem usar o document nem bibliotecas como jQuery)
+    - [x]  Seu projeto deverá ser desenvolvido utilizando Git e GitHub
+    - [x]  **A cada requisito implementado** faça um commit com uma mensagem descritiva do que você evoluiu. Caso queira dividir um requisito em vários commits, não há problema. Mas evite colocar mais de um requisito no mesmo commit
+- Versionamento
+    - [x]  Versionamento usando Git é obrigatório, crie um **repositório público** no seu perfil do GitHub
+    - [x]  Faça commits a cada funcionalidade implementada
+- Layout
+    - [x]  Aplicar layout para mobile, seguindo figma fornecido (não é necessário implementar um layout para desktop)   
+- Escolha de Filme (rota "/")
+    - [x]  Buscar as informações dos filmes pela API fornecida e exibir conforme layout fornecido
+    - [x]  Ao clicar em um filme, o usuário deve ser redirecionado para a rota "/sessoes/:idFilme", sendo :idFilme o id do filme clicado
+- Escolha de Sessão (rota "/sessoes/:idFilme")
+    - [x]  A partir do id da URL, obtenha da API as sessões disponíveis para o filme e exiba conforme o layout fornecido
+    - [x]  Ao clicar em uma sessão, o usuário deve ser redirecionado para a rota "/assentos/:idSessao", onde :idSessao é o id da sessão escolhida
+- Escolha de Assento (rota "/assentos/:idSessao")
+    - [x]  A partir do id da sessão, buscar os dados da sessão da API e exibir o layout conforme fornecido
+    - [x]  Ao clicar em um assento disponível, o assento deve ser marcado como "Selecionado"
+    - [x]  Ao clicar novamente em um assento selecionado, este deve voltar para "Disponível"
+    - [x]  Ao clicar em um assento indisponível, deverá ser exibido um alerta de "Esse assento não está disponível"
+    - [x]  O usuário pode selecionar vários assentos
+    - [x]  O usuário deve poder inserir o nome e o CPF do comprador
+    - [x]  Ao clicar em "Reservar assento(s)", o pedido deve ser enviado para o servidor e o usuário deve ser redirecionado para a rota "/sucesso".  Isso fará com os assentos marcados fiquem indisponíveis para outras marcações.
+- Rodapé
+    - [x]  Ao longo das telas de Sessão e Assento, deve ser exibido um rodapé com as informações do filme selecionado. Estas informações virão das chamadas à API em cada tela
+- Sucesso
+    - [x]  Implementar layout conforme fornecido, exibindo os dados do pedido feito
+    - [x]  Ao clicar em "Home" o usuário deve voltar para a rota inicial ("/"), com o pedido zerado
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+# Bônus (opcional)
+- Botão de voltar
+    - [x]  Adicione um botão de voltar no topo do site à esquerda
+    - [x]  O topo do site deve estar fora dos componentes das páginas, ou seja, fora do <Switch> do React Router
+    - [x]  Ao clicar no botão voltar, o usuário deve retornar para a página que estava anteriormente
+    - [x]  O botão não deve ser exibido na tela inicial
 
-### `npm test`
+### Tecnologias Utilizadas
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![CSS](https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white)
+![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)
+![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
+![Nodejs](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
 
-### `npm run build`
+<!-- CONTACT -->
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Contato
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+[![LinkedIn][linkedin-shield]][linkedin-url]
+[![Mail][mail-shield]][mail-url]
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=blue
+[linkedin-url]: https://www.linkedin.com/in/pedro-ivo-brum-cinelli//
+[mail-shield]: https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white
+[mail-url]: mailto:cinelli.dev@gmail.com
