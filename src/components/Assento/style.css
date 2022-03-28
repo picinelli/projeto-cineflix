@@ -42,11 +42,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 
 .assento-indisponivel {
   background: #fbe192;
   border: 1px solid #f7c52b;
+  cursor: not-allowed;
 }
 
 .legenda-opcoes {
