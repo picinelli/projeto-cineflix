@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom";
 
 import "./style.css";
-import flechaVoltar from '../../assets/images/flecha-voltar.svg'
+import flechaVoltar from '../../assets/images/back-19.svg'
 
 
 export default function Header() {
