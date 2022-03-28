@@ -16,3 +16,9 @@
   font-size: 34px;
   color: var(--laranja);
 }
+
+.Header img {
+  width: 30px;
+  position: absolute;
+  left: 30px;
+}

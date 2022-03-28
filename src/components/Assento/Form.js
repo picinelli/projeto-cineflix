@@ -7,8 +7,12 @@ export default function Form(props) {
 
   function verificarDisponibilidade(e) {
     e.preventDefault();
+
     if (infoUsuario.assentos.length < 1) {
       return alert("Ops! Você esqueceu de selecionar seus assentos :D");
+    }
+    if (infoUsuario.cpf.length < 14) {
+      return alert("Ops! Parece que o CPF foi digitado incorretamente");
     }
 
     const promise = axios.post(
@@ -53,6 +57,7 @@ export default function Form(props) {
           placeholder="Digite seu CPF..."
           onChange={(e) => {
             setInfoUsuario({ ...infoUsuario, cpf: mascaraCPF(e.target.value) });
+            console.log(infoUsuario.cpf)
           }}
           maxLength="14"
           required
