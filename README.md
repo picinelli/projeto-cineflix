@@ -50,7 +50,7 @@
     - [x]  Ao clicar em "Home" o usuário deve voltar para a rota inicial ("/"), com o pedido zerado
 
 
-# Bônus (opcional)
+## Bônus (opcional)
 - Botão de voltar
     - [x]  Adicione um botão de voltar no topo do site à esquerda
     - [x]  O topo do site deve estar fora dos componentes das páginas, ou seja, fora do <Switch> do React Router
