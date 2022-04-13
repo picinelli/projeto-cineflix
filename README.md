@@ -18,6 +18,8 @@
 
 <!-- ABOUT THE PROJECT -->
 
+![Banner](https://github.com/picinelli/projeto-cineflix/blob/main/src/assets/images/Cineflex-Logo.png)
+
 ## Requisitos
 
 - Geral
