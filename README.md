@@ -13,7 +13,7 @@
   <p align="center">
     Single-Page Application (SPA) para um cinema, usando React Router!
     <br />
-    <a href="https://github.com/picinelli/projeto-cineflix/tree/main/src"><strong>JSX code»</strong></a>
+    <a href="https://github.com/picinelli/projeto-cineflix/tree/main/src"><strong>Código JSX»</strong></a>
 </div>
 
 <!-- ABOUT THE PROJECT -->
